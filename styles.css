@@ -1,0 +1,372 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Cabin";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+
+/* Background */
+
+.wrapper {
+    height: 100vh;
+    /* margin-top: 300px; */
+    min-height: 200px;
+}
+
+.wrapper video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.background {
+    background-image: url("media/wallpaper.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+}
+
+.fixed h2 {
+display: table-cell;
+vertical-align: middle;
+}
+
+
+/* Header */
+
+.headerContainer {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(16, 29, 43);
+    background: linear-gradient(0deg, rgb(24, 45, 66) 0%, rgb(52, 71, 92) 83%);
+    height: 62px;
+    color: white;
+    box-shadow: 0 5px 70px 0px black;
+}
+
+.headerLinks {
+    margin-right: 0;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.headerLinks a {
+    text-decoration: none;
+    margin: 20px;
+}
+
+a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+  }
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img {
+    height: 100%;
+    padding: 8px;
+    margin-left: 10px;
+}
+
+.logo p {
+    font-size: 1.3rem;
+}
+
+/* Layer 1 */
+
+.layer1 {
+    width: 85%;
+    /* height: 45%; */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    /* margin-bottom: 350px;
+    margin-left: auto;
+    margin-right: auto; */
+    padding: 80px;
+    margin: 6% auto 20%;
+    min-height: 350px;
+    display: flex;
+    gap: 7%;
+    border-radius: 14px;
+}   
+
+.layer1 h1 {
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+.layer1 p {
+    font-size: 1.2rem;
+}
+
+.layer1 img {
+    width: 100%;
+    height: auto;
+    /* max-height: 600px; */
+    display: block;
+    border-radius: 14px;
+    margin: auto;
+}
+
+.text1 {
+    /* margin-right: 20px; */
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-items: center;
+    gap: 5%;
+    text-align: center;
+}
+
+.text1 button {
+    padding: 20px 30px;
+    margin-top: 5%;
+    max-width: 200px;
+    border-radius: 23px;
+    border: solid 3px white;
+    font-size: 1.5rem;
+    background-color: #eac800;
+    font-weight: bold;
+    outline: none;
+}
+
+.text1 button:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(255, 204, 0, 0.55) 0 0 30px;
+}
+
+.img1 {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1150px) {
+    .layer1 {
+        flex-direction: column;
+        gap: 35px;
+        align-items: center;
+        padding: 25px 45px 65px;
+        margin-top: 12%;
+    }
+
+    .layer1 img {
+        max-width: 600px;
+    }
+
+    .text1 {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .layer1 {
+        margin-top: 13%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .layer1 {
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .layer1 {
+        margin-top: 18%;
+    }
+}
+
+/* Layer 2 */
+
+.scroll {
+    background: linear-gradient(0deg, rgb(24, 45, 66) 0%, rgb(52, 71, 92) 83%);
+    /* background-color: #152535; */
+    padding: 55px 8%;
+    color: #666666;
+    min-height: 300px;
+    color: white;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 28px 0px black;
+}
+
+.scrollTitle {
+    text-shadow: #FC0 1px 0 10px;
+}
+
+.scrollTitle {
+    padding-bottom: 30px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.scrollContent {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.scrollEl img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    border: 0.2rem solid #eac800 ;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+.scrollEl img:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(255, 204, 0, 0.55) 0 0 30px;
+}
+
+.scrollEl {
+    text-align: center;
+    margin-right: 25px;
+    font-size: 1.2rem;
+}
+
+
+/* Layer 3 */
+
+.layer3 {
+    color: white;
+    padding: 19% 40px;
+    text-align: center;
+    text-shadow: 0 0 1em black, 0 0 2em black;
+}
+
+.layer3 p {
+    font-size: 1.5rem;
+    margin-top: 3%;
+}
+
+
+/* Layer4 */
+
+.layer4 {
+    background: linear-gradient(0deg, rgb(24, 45, 66) 0%, rgb(52, 71, 92) 83%);
+    width: 100%;
+    height: 235px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 28px 0px black;
+}
+
+.layer4 .ad {
+    background-color: #42b1d6;
+    width: 65%;
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+}
+
+.adButton button {
+    /* min-width: 78px;
+    max-height: 48px; */
+    background-color: rgba(46, 98, 142,0);
+    color: black;
+    /* padding: 10px 22px; */
+    width: 120px;
+    height: 48px;
+    border-radius: 12px;
+    border: 3px solid #2e628e;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.adButton button:hover {
+    transform: scale(1.05);
+    background-color: rgba(46, 98, 142,0.3);
+}
+
+.adButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l4Info {
+    width: 75%;
+}
+
+@media screen and (max-width: 750px) {
+    .layer4 .ad {
+        min-width: 450px;
+    }
+}
+
+/* Footer */
+
+footer {
+    /* background-color: black; */
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(31, 31, 31) 83%);
+    height: 57px;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+footer p {
+    margin: auto;
+}
+
+
+
+
+
