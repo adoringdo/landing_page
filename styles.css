@@ -93,12 +93,14 @@ a:link {
   /* mouse over link */
   a:hover {
     color: white;
+    transform: scale(1.1);
   }
   
   /* selected link */
   a:active {
     color: white;
   }
+
 
 .logo {
     display: flex;
